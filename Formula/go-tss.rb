@@ -5,21 +5,21 @@
 class GoTss < Formula
   desc "Ba dum, tss!"
   homepage "https://github.com/maleynikov/homebrew-tap"
-  version "0.1.8"
+  version "0.1.9"
   depends_on :macos
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://gitlab.maleynikov.tech/maleynikov/tss/-/releases/v0.1.8/downloads/tss_Darwin_x86_64.tar.gz"
-      sha256 "a6d37a46428bee19a138f5f14879f9290c8cd4468468f0fc74bd74595c3c7b3a"
+    if Hardware::CPU.arm?
+      url "https://gitlab.maleynikov.tech/api/v4/projects/23/packages/generic/tss/v0.1.9/tss_Darwin_arm64.tar.gz?private_token=7W6yQkYCDW1pbaPmazVQ"
+      sha256 "810bfba935daa2442c1a3f905c23a5727e5eaf427c45919f37a7113bf6220e94"
 
       def install
         bin.install "tss"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://gitlab.maleynikov.tech/maleynikov/tss/-/releases/v0.1.8/downloads/tss_Darwin_arm64.tar.gz"
-      sha256 "1ec62195ef5b704401272e981dc80bb1b94ecf74e6f2a64f40c7beb86d4e6771"
+    if Hardware::CPU.intel?
+      url "https://gitlab.maleynikov.tech/api/v4/projects/23/packages/generic/tss/v0.1.9/tss_Darwin_x86_64.tar.gz?private_token=7W6yQkYCDW1pbaPmazVQ"
+      sha256 "0ab47eb73ea8212431c11c642c44e91609568b1a4b76180c29112c2cddcc7a9b"
 
       def install
         bin.install "tss"
