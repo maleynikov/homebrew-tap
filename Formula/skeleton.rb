@@ -5,21 +5,21 @@
 class Skeleton < Formula
   desc "Yet another PS auto-generator"
   homepage "https://github.com/maleynikov/homebrew-tap"
-  version "0.8.2"
+  version "0.10.0"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://gitlab.maleynikov.tech/api/v4/projects/12/packages/generic/skeleton/0.8.2/skeleton_Darwin_arm64.tar.gz?private_token=7W6yQkYCDW1pbaPmazVQ"
-      sha256 "de254669b4b13e3124c5026e5b82a7c1ceee58d35439e161bc9a39e719bfcabe"
+      url "https://gitlab.maleynikov.tech/api/v4/projects/12/packages/generic/ps-skeleton/0.10.0/ps-skeleton_Darwin_arm64.tar.gz?private_token=7W6yQkYCDW1pbaPmazVQ"
+      sha256 "d9a2fda80ef886d79012c9b132e69c161fccc3b2f2396f89ad65a906d2a351a3"
 
       def install
         bin.install "ps-skeleton"
       end
     end
     if Hardware::CPU.intel?
-      url "https://gitlab.maleynikov.tech/api/v4/projects/12/packages/generic/skeleton/0.8.2/skeleton_Darwin_x86_64.tar.gz?private_token=7W6yQkYCDW1pbaPmazVQ"
-      sha256 "f55dc9b762c25fce21eaf600adfef24e8639cb8433cb055c7b4158be4ad3cab0"
+      url "https://gitlab.maleynikov.tech/api/v4/projects/12/packages/generic/ps-skeleton/0.10.0/ps-skeleton_Darwin_x86_64.tar.gz?private_token=7W6yQkYCDW1pbaPmazVQ"
+      sha256 "e1d77a47ed6964fd0d6182fe084ebcea8dfb63493c29c6ff401cd2631e5d3d40"
 
       def install
         bin.install "ps-skeleton"
