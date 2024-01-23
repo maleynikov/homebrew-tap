@@ -10,7 +10,7 @@ class Skeleton < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://gitlab.maleynikov.tech/api/v4/projects/12/packages/generic/skeleton/0.8.2/ps-skeleton_Darwin_arm64.tar.gz?private_token=7W6yQkYCDW1pbaPmazVQ"
+      url "https://gitlab.maleynikov.tech/api/v4/projects/12/packages/generic/skeleton/0.8.2/skeleton_Darwin_arm64.tar.gz?private_token=7W6yQkYCDW1pbaPmazVQ"
       sha256 "de254669b4b13e3124c5026e5b82a7c1ceee58d35439e161bc9a39e719bfcabe"
 
       def install
@@ -18,7 +18,7 @@ class Skeleton < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://gitlab.maleynikov.tech/api/v4/projects/12/packages/generic/skeleton/0.8.2/ps-skeleton_Darwin_x86_64.tar.gz?private_token=7W6yQkYCDW1pbaPmazVQ"
+      url "https://gitlab.maleynikov.tech/api/v4/projects/12/packages/generic/skeleton/0.8.2/skeleton_Darwin_x86_64.tar.gz?private_token=7W6yQkYCDW1pbaPmazVQ"
       sha256 "f55dc9b762c25fce21eaf600adfef24e8639cb8433cb055c7b4158be4ad3cab0"
 
       def install
